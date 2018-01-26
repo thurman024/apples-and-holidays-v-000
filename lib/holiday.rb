@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       print_holiday = holiday.to_s.split("_")
       print_holiday.each {|day|
         formatted_holiday << day.capitalize}
-      print_holiday = print_holiday.join
+      print_holiday = formatted_holiday.join(" ")
       supplies = supply_list.join(", ")
       puts "  #{print_holiday}: #{supplies}"
     end
