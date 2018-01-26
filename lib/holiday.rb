@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
     data.each do |holiday, supply_list|
       formatted_holiday = []
       print_holiday = holiday.to_s.split("_")
-      print_holiday.each {|day| 
+      print_holiday.each {|day|
         formatted_holiday << day.capitalize}
       print_holiday = print_holiday.join
       supplies = supply_list.join(", ")
